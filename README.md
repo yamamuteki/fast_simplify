@@ -1,4 +1,4 @@
-# FastSimplify
+# FastSimplify [![Gem Version](https://badge.fury.io/rb/fast_simplify.svg)](https://badge.fury.io/rb/fast_simplify) [![Build Status](https://travis-ci.org/yamamuteki/fast_simplify.svg?branch=master)](https://travis-ci.org/yamamuteki/fast_simplify) [![Coverage Status](https://coveralls.io/repos/github/yamamuteki/fast_simplify/badge.svg?branch=master)](https://coveralls.io/github/yamamuteki/fast_simplify?branch=master) [![Code Climate](https://codeclimate.com/github/yamamuteki/fast_simplify/badges/gpa.svg)](https://codeclimate.com/github/yamamuteki/fast_simplify) [![Dependency Status](https://gemnasium.com/badges/github.com/yamamuteki/fast_simplify.svg)](https://gemnasium.com/github.com/yamamuteki/fast_simplify)
 
 Simplify array using given rate with equal interval algorithm. Keep first and last elements.
 
