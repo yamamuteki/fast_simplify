@@ -1,8 +1,6 @@
 # FastSimplify
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fast_simplify`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Simplify array using given rate with equal interval algorithm. Keep first and last elements.
 
 ## Installation
 
@@ -22,7 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+FastSimplify.simplify(array, 1.0)
+# => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+FastSimplify.simplify(array, 0.5) # keep first and last elements.
+# => [1, 3, 6, 8, 10]
+
+FastSimplify.simplify(array, 0.2)
+# => [1, 10]
+```
 
 ## Development
 
@@ -32,7 +41,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/fast_simplify.
+Bug reports and pull requests are welcome on GitHub at https://github.com/yamamuteki/fast_simplify.
 
 
 ## License
