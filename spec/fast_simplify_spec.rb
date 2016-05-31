@@ -36,4 +36,9 @@ describe FastSimplify do
     expect(FastSimplify.simplify(array, 0.1)).to eq [1, 20]
     expect(FastSimplify.simplify(array, 0.0)).to eq [1, 20]
   end
+
+  it 'should simplify rational rate keep first and last elements' do
+    expect(FastSimplify.simplify(array, 0.314159265359)[0]).to eq 1
+    expect(FastSimplify.simplify(array, 0.314159265359)[-1]).to eq 20
+  end
 end

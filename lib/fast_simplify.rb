@@ -6,9 +6,9 @@ module FastSimplify
     return array if len <= 2 || rate == 1
     return [array[0], array[-1]] if rate == 0
 
-    result_count = len * rate
+    result_count = (len * rate).round
     max_index = len - 1
-    step = max_index / (result_count - 1)
+    step = max_index / (result_count - 1).to_f
 
     result = []
     0.step(max_index, step) do |n|
